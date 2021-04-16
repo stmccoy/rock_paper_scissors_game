@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Welcome Player 1</h1>
+    <h3>Please pick your move</h3>
+
+    <form action="/pvp1" method="post">
+        <select name="move" id="moves">
+            <option value="default" selected="selected" disabled>Pick an option</option>
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <input type="submit" name="submit" id="submit">
+    </form>
+
+{% endblock %}
