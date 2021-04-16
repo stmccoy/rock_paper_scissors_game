@@ -4,15 +4,20 @@
 
     <h1>Welcome Player 2</h1>
     <h3>Please pick your move</h3>
-
+    <div>
+        <img id= "rps" src="/static/rock-paper-scissors-items.png" alt="rock paper scissors">
+    </div>
     <form action="/pvp2" method="post">
         <select name="move" id="moves">
             <option value="default" selected="selected" disabled>Pick an option</option>
-            <option value="rock">Rock</option>
-            <option value="paper">Paper</option>
-            <option value="scissors">Scissors</option>
+            <option value="rock">🪨 Rock</option>
+            <option value="paper">📄 Paper</option>
+            <option value="scissors">✂️ Scissors</option>
         </select>
         <input type="submit" name="submit" id="submit">
     </form>
+    <footer>
+        <p><a href="/">Home</a></p> 
+    </footer>  
 
 {% endblock %}

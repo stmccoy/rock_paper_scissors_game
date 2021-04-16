@@ -1,0 +1,64 @@
+h1, h3, form, #winner{
+    text-align: center;
+    padding-right: 1%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+footer{
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#image-2{
+    width: 500px;
+    height: 92%;
+}
+
+footer > p > a {
+    font-size: 30px;
+}
+
+#right {
+    text-align: right;
+}
+
+select, option{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+}
+
+input {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+}
+
+#rps{
+    margin-left: 24.5%;
+}
+form{
+    margin-top: 2%;
+}
+
+#winner{
+    font-size: 50px;
+    padding-right: 5%;
+}
+
+.winner-image{
+    height: 450px;
+    padding-left: 31.5%;
+}

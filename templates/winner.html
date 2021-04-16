@@ -1,7 +1,41 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <p>Player 1 chose {{player_1_input}}</p>
-    <p>Player 2 chose {{player_2_input}}</p>
-    <p>{{result}}</p>
+    {% if result == "It's a draw" %}
+    <img class="winner-image" src="/static/draw.jpeg" alt="two stick figures banging heads">
+    {% endif %}
+    {% if result == "Player 1 wins" %}
+    <img class="winner-image" src="/static/red wins.jpeg" alt="two stick figures banging heads">
+    {% endif %}
+    {% if result == "Player 2 wins" %}
+    <img class="winner-image" src="/static/red wins.jpeg" alt="two stick figures banging heads">
+    {% endif %}
+    <div id="winner">
+        <p>Player 1 chose 
+            {% if player_1_input == "scissors" %}
+            ✂️
+            {% endif %}
+            {% if player_1_input == "rock" %}
+            🪨
+            {% endif %}
+            {% if player_1_input == "paper" %}
+            📄
+            {% endif %}
+        </p>
+        <p>Player 2 chose 
+            {% if player_2_input == "scissors" %}
+            ✂️
+            {% endif %}
+            {% if player_2_input == "rock" %}
+            🪨
+            {% endif %}
+            {% if player_2_input == "paper" %}
+            📄
+            {% endif %}
+        </p>
+        <p>{{result}}</p>
+    </div>
+    <footer>
+        <p><a href="/">Home</a></p> 
+    </footer>  
 {% endblock %}

@@ -22,22 +22,22 @@ def pvp2():
     if request.method == 'POST':
         player_2_move = request.form.get('move')
         game_1.set_player_2_attribute(player_2_move)
-        return redirect(url_for('pvpwinner'))
+        return redirect(url_for('winner'))
     return render_template('player-2.html')
 
-@app.route('/pvpwinner', methods=['POST', 'GET'])
-def pvpwinner():
+@app.route('/winner', methods=['POST', 'GET'])
+def winner():
     result = game_1.winner()
     player_1_input = game_1.player_1_object.move
     player_2_input = game_1.player_2_object.move
     return render_template('winner.html', result=result, player_1_input=player_1_input, player_2_input=player_2_input)
 
-@app.route('/pvc1', methods=['POST', 'GET'])
+@app.route('/pvc', methods=['POST', 'GET'])
 def pvc1():
     if request.method == 'POST':
         player_1_move = request.form.get('move')
         game_1.set_player_1_attribute(player_1_move)
         game_1.computer_move_select()
-        return redirect(url_for('pvpwinner'))
-    return render_template('cpu-1.html')
+        return redirect(url_for('winner'))
+    return render_template('cpu.html')
 
