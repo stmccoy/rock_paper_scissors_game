@@ -13,7 +13,6 @@ ul{
 footer{
     text-align: center;
     margin-top: 5%;
-    margin-right: 5%;
 }
 
 a{
@@ -47,7 +46,8 @@ input {
 }
 
 #rps{
-    margin-left: 24.5%;
+    display: flex;
+    justify-content: center;
 }
 form{
     margin-top: 2%;
@@ -55,10 +55,10 @@ form{
 
 #winner{
     font-size: 50px;
-    padding-right: 5%;
+    text-align: center;
 }
 
 .winner-image{
     height: 450px;
-    padding-left: 31.5%;
 }
+

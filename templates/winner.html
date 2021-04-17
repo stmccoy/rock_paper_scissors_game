@@ -1,15 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {% if result == "It's a draw" %}
-    <img class="winner-image" src="/static/draw.jpeg" alt="two stick figures banging heads">
-    {% endif %}
-    {% if result == "Player 1 wins" %}
-    <img class="winner-image" src="/static/red wins.jpeg" alt="two stick figures banging heads">
-    {% endif %}
-    {% if result == "Player 2 wins" %}
-    <img class="winner-image" src="/static/red wins.jpeg" alt="two stick figures banging heads">
-    {% endif %}
+    <div id="rps">
+        {% if result == "It's a draw" %}
+        <img class="winner-image" src="/static/draw.jpeg" alt="two stick figures banging heads">
+        {% endif %}
+        {% if result == "Player 1 wins" %}
+        <img class="winner-image" src="/static/red wins.jpeg" alt="two stick figures banging heads">
+        {% endif %}
+        {% if result == "Player 2 wins" %}
+        <img class="winner-image" src="/static/red wins.jpeg" alt="two stick figures banging heads">
+        {% endif %}
+    </div>
     <div id="winner">
         <p>Player 1 chose 
             {% if player_1_input == "scissors" %}
