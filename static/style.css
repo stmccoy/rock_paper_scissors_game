@@ -1,6 +1,5 @@
 h1, h3, form, #winner{
     text-align: center;
-    padding-right: 1%;
 }
 
 ul{
@@ -10,7 +9,7 @@ ul{
     padding: 0;
 }
 
-footer{
+footer > p{
     text-align: center;
     margin-top: 5%;
 }
